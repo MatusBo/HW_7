@@ -1,0 +1,258 @@
+@font-face {
+    font-family: "BasisGrotesquePro-Bold" format("woff");
+    src: url(./fonts/BasisGrotesquePro-Bold.woff);
+}
+
+@font-face {
+    font-family: "BasisGrotesquePro-Light" format("woff");
+    src: url(./fonts/BasisGrotesquePro-Light.woff);
+}
+
+@font-face {
+    font-family: "BasisGrotesquePro-Medium" format("woff");
+    src: url(./fonts/BasisGrotesquePro-Medium.woff);
+}
+
+@font-face {
+    font-family: "BasisGrotesquePro-Regular" format("woff");
+    src: url(./fonts/BasisGrotesquePro-Regular.woff);
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  /* чи потрібно box-sizing: border-box;*/
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  max-width: 1440px;
+  position: absolute;
+  display: flex;
+  padding: 1vw 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+.lang {
+  margin-right: 2vw;
+}
+
+header div p {
+  opacity: 35%;
+  margin-left: 7vw;
+  font-family: "BasisGrotesquePro-Light";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.logo {
+  position: absolute;
+  margin-top: 2vw;
+  margin-left: 3vw;
+  width: 3vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 9vw;
+}
+
+li {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  margin: 0vw;
+  padding: 0vw;
+  gap: 3vw;
+  list-style: none;
+}
+
+a,
+.lang p {
+  text-decoration: none;
+  color: black;
+  font-family: "BasisGrotesquePro-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/*ПЕРШИЙ РОЗДІЛ*/
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 78vh 78vh 39vh 39vh;
+}
+
+.name {
+  grid-column: 1 / 3;
+  margin: auto 3vw auto 13vw;
+  max-width: 720px;
+}
+
+.orange_logo {
+  background-image: url(./img/orange_logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-column: 1 / 3;
+  max-width: 720px;
+}
+
+.boy {
+  background-image: url(./img/boy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-column: 3 / 5;
+  max-width: 720px;
+}
+
+.objective {
+  grid-column: 3 / 5;
+  margin: auto 13vw auto 3vw;
+  max-width: 720px;
+}
+
+h1 {
+  font-family: "BasisGrotesquePro-Bold";
+  font-size: 57px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.name h3,
+.objective h3,
+.people h3,
+.schools h3,
+.participants h3,
+.partners h3 {
+  font-family: "BasisGrotesquePro-Bold";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #0536fc;
+}
+
+.name p,
+.objective p {
+  font-family: "BasisGrotesquePro-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  opacity: 60%;
+  margin-right: 10vw;
+}
+
+.objective h2,
+.people h2 {
+  font-family: "BasisGrotesquePro-Bold";
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: #0536fc;
+  border-color: #0536fc;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 1.5vw 3vw;
+  margin-top: 8vw;
+}
+
+/* при зменшенні екрану задати дві колонки замість 4-х, доробити*/
+@media screen and (max-width: 380px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*ДРУГИЙ РОЗДІЛ*/
+
+.people {
+  grid-column: 1 / 3;
+  margin: auto 13vw auto 3vw;
+  max-width: 720px;
+}
+.children {
+  background-image: url(./img/children.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-column: 3 / 4;
+  max-width: 360px;
+}
+.schools {
+  grid-column: 4 / 5;
+  margin: auto 13vw auto 3vw;
+  max-width: 360px;
+}
+.participants {
+  grid-column: 1 / 2;
+  margin: auto 13vw auto 3vw;
+  max-width: 360px;
+}
+.girls {
+  background-image: url(./img/girls.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-column: 2 / 3;
+  max-width: 360px;
+}
+.partners {
+  grid-column: 3 / 4;
+  margin: auto 13vw auto 3vw;
+  max-width: 360px;
+}
+
+.team {
+  background-image: url(./img/team.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-column: 4 / 5;
+  max-width: 360px;
+}
