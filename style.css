@@ -1,21 +1,21 @@
 @font-face {
-    font-family: "BasisGrotesquePro-Bold" format("woff");
-    src: url(./fonts/BasisGrotesquePro-Bold.woff);
+    font-family: 'BasisGrotesquePro-Bold';
+    src: url(./fonts/BasisGrotesquePro-Bold.woff) format('woff');
 }
 
 @font-face {
-    font-family: "BasisGrotesquePro-Light" format("woff");
-    src: url(./fonts/BasisGrotesquePro-Light.woff);
+    font-family: "BasisGrotesquePro-Light";
+    src: url(./fonts/BasisGrotesquePro-Light.woff) format("woff");
 }
 
 @font-face {
-    font-family: "BasisGrotesquePro-Medium" format("woff");
-    src: url(./fonts/BasisGrotesquePro-Medium.woff);
+    font-family: "BasisGrotesquePro-Medium";
+    src: url(./fonts/BasisGrotesquePro-Medium.woff) format("woff");
 }
 
 @font-face {
-    font-family: "BasisGrotesquePro-Regular" format("woff");
-    src: url(./fonts/BasisGrotesquePro-Regular.woff);
+    font-family: "BasisGrotesquePro-Regular";
+    src: url(./fonts/BasisGrotesquePro-Regular.woff) format("woff");
 }
 
 body {
@@ -150,10 +150,11 @@ h1 {
 
 .name h3,
 .objective h3,
-.people h3,
-.schools h3,
-.participants h3,
-.partners h3 {
+.people h3 {
+  color: #0536fc;
+}
+
+h3 {
   font-family: "BasisGrotesquePro-Bold";
   font-size: 16px;
   font-weight: 700;
@@ -161,7 +162,7 @@ h1 {
   letter-spacing: -0.03em;
   text-align: left;
   text-transform: uppercase;
-  color: #0536fc;
+  
 }
 
 .name p,
@@ -226,14 +227,18 @@ h1 {
 }
 .schools {
   grid-column: 4 / 5;
-  margin: auto 13vw auto 3vw;
+  margin: auto 3vw auto 3vw;
   max-width: 360px;
 }
+
 .participants {
+  margin: 0;
   grid-column: 1 / 2;
-  margin: auto 13vw auto 3vw;
+  margin: auto 3vw auto 3vw;
   max-width: 360px;
+  background-color: #0536fc;
 }
+
 .girls {
   background-image: url(./img/girls.png);
   background-repeat: no-repeat;
@@ -242,9 +247,10 @@ h1 {
   grid-column: 2 / 3;
   max-width: 360px;
 }
+
 .partners {
   grid-column: 3 / 4;
-  margin: auto 13vw auto 3vw;
+  margin: auto 3vw auto 3vw;
   max-width: 360px;
 }
 
@@ -255,4 +261,28 @@ h1 {
   background-position: center;
   grid-column: 4 / 5;
   max-width: 360px;
+}
+
+.schools h3,
+.partners h3 {
+  color: #000000;
+}
+
+.participants h3 {
+color: #FFFFFF;
+}
+
+.schools p,
+.participants p,
+.partners p {
+  font-family: "BasisGrotesquePro-Regular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  align-items: end;
+  opacity: 60%;
+  margin-right: 10vw;
+  margin-top: 10vh;
 }
